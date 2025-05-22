@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Navbar.css';
 import profileImg from '../assets/lilpfp.png';
-
+import Sparkle from '../assets/sparkle.png';
 
 function Navbar() {
   const name = "Lilly";
@@ -25,6 +25,8 @@ function Navbar() {
             {char === ' ' ? '\u00A0' : char}
           </span>
         ))}
+
+         <img src={Sparkle} alt="Sparkle" className="sparkle-icon" />
       </div>
     </nav>
   );

@@ -43,6 +43,8 @@
   background-color: #1c4314;
 }
 
+
+
 @keyframes wave {
   0%, 100% {
     transform: translateY(0);
@@ -56,6 +58,12 @@
   75% {
     transform: translateY(-3px);
   }
+}
+
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
 }
 
 /* Tablets (max-width: 900px) */
