@@ -37,15 +37,13 @@
   
 }
 
+
 @keyframes wavePop {
-  0% {
+  0%, 100% {
     transform: scale(1) translateY(0);
   }
   50% {
     transform: scale(1.4) translateY(5px);
-  }
-  100% {
-    transform: scale(1) translateY(0);
   }
 }
 
@@ -76,7 +74,7 @@
   display: inline-block;
   transform: scaleY(0.85);
 
-  animation: wavePop 1.2s ease-in-out 2 alternate;;
+  animation: wavePop 1.2s ease-in-out infinite;
 }
 
 
@@ -134,9 +132,17 @@
       0 0 3px #217b20,
       0 0 6px #33cd18;
 
-    animation: wavePop 1.2s ease-in-out 2 alternate;
+    animation: wavePop 1.2s ease-in-out infinite;
   }
-  
+  @keyframes wavePop {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
   .profile-pic {
     width: 5rem;
     height: 5rem;
