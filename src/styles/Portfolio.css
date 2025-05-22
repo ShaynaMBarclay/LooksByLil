@@ -72,7 +72,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-     width: 100vw;
+     width: 80vw;
      box-sizing: border-box;
     overflow-x: hidden; 
   }
@@ -82,12 +82,13 @@
     grid-template-columns: 1fr; 
     gap: 2rem;
      justify-items: center;
-     margin-left: 2rem;
+     margin-left: 3rem;
+     margin-right: 0;
   }
 
    .portfolio-image {
     
-     width: 70%;
+     width: 77%;
     max-width: 320px;
     height: auto;
     
