@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+
 import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
-import Spinner from "./components/Spinner";
+
 
 
 const portfolioImages = [
