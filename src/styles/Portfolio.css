@@ -101,9 +101,12 @@
  
 
   .portfolio-image:hover {
-    transform: scale(1.05); 
+     transform: scale(1.15) rotateY(10deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+  z-index: 10; 
   }
-
 
 }
 
