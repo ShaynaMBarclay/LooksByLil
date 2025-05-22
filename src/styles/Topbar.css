@@ -1,6 +1,6 @@
 .topbar {
   position: fixed;
-  top: 1rem;
+  top: 1.3rem;
   left: 0;
   right: 0;
   height: 60px;
@@ -12,6 +12,7 @@
   font-family: "Lobster", sans-serif;
   background: transparent;
   pointer-events: none; 
+  
 }
 
 

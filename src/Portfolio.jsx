@@ -66,7 +66,7 @@ const imageVariants = {
 
 
 const Portfolio = () => {
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(4);
   
 
   useEffect(() => {

@@ -1,11 +1,10 @@
 .portfolio {
   max-width: 1300px;
   width: calc(100vw - 10.5rem);
-  margin: 0.1rem auto 1rem auto;
+  margin: 1.6rem auto 1rem auto;
   padding: 6.5rem 1rem 0.3rem 1rem;
-  box-sizing: border-box;
+  
   scroll-behavior: smooth;
-
 }
 
 
@@ -29,7 +28,6 @@
 .portfolio-grid > div {
    overflow: visible;
   border-radius: 12px;
-  
   position: relative;
 }
 
@@ -76,6 +74,7 @@
   }
 
    .portfolio-image {
+    
      width: 70%;
     max-width: 320px;
     height: auto;
