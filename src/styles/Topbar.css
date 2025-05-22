@@ -35,12 +35,12 @@
    transition: all 0.3s ease;
   animation: wave 1.5s ease-in-out infinite;
   pointer-events: auto;
-   border: 3px solid #39FF14;
+   border: 3px solid #ff9100;
 }
 
 .glow-button:hover {
   transform: scale(1.05);
-  background-color: #1c4314;
+  background-color: #49d92f;
 }
 
 

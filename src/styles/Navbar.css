@@ -55,7 +55,7 @@
   font-weight: 700;
   font-style: normal;
   color: white;
-   -webkit-text-stroke: 3px #39FF14;
+   -webkit-text-stroke: 3px #ffa32a;
   text-shadow:
     /* Dark green outline shadows */
     -1px -1px 0 #118c11,
@@ -86,7 +86,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 2rem;
-  border: 3px solid #39FF14;
+  border: 3px solid #ff9100;
 }
 
 .sparkle-icon {
