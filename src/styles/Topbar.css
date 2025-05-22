@@ -100,3 +100,28 @@
     border-radius: 8px;
   }
 }
+
+/* iPad Mini (portrait: around 768px wide) */
+@media (max-width: 820px) and (min-width: 601px) {
+  .topbar {
+    height: 55px;
+    padding: 0 1.2rem;
+    justify-content: space-between;
+    pointer-events: auto;
+  }
+
+  .topbar-logo {
+      height: 5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .glow-button {
+    font-size: 1.2rem;
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    margin-left: 37rem;
+  }
+}
