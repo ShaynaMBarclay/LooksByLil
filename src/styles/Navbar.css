@@ -132,16 +132,8 @@
       0 0 3px #217b20,
       0 0 6px #33cd18;
 
-    animation: wavePop 1.2s ease-in-out infinite;
   }
-  @keyframes wavePop {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
+ 
 
   .profile-pic {
     width: 5rem;
