@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./styles/Portfolio.css";
+import Spinner from "./components/Spinner";
 
 
 const portfolioImages = [
@@ -42,15 +43,6 @@ const portfolioImages = [
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747932474/cards_l7omn7.jpg",
 ];
 
-// Animation variants
-const containerVariants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
 
 const imageVariants = {
   hidden: { opacity: 0, x: 50 },
@@ -66,50 +58,26 @@ const imageVariants = {
 
 
 const Portfolio = () => {
-  const [visibleCount, setVisibleCount] = useState(4);
-  
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const nearBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
-
-      if (nearBottom) {
-        setVisibleCount((prev) => Math.min(prev + 4, portfolioImages.length));
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  
-   return (
+  return (
     <div className="portfolio">
-      
-        <motion.div
+      <motion.div
         className="portfolio-grid"
-        variants={containerVariants}
         initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.2 }} 
+        animate="show"
+        variants={{
+          hidden: {},
+          show: { transition: { staggerChildren: 0.1 } },
+        }}
       >
-      {portfolioImages.slice(0, visibleCount).map((src, i) => (
-  <motion.div
-    key={i}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.2 }}
-    variants={imageVariants}
-  >
-    <img
-      src={src}
-      alt={`Portfolio image ${i + 1}`}
-      className="portfolio-image"
-      loading="lazy"
-    />
-  </motion.div>
-))}
+        {portfolioImages.map((src, i) => (
+          <motion.div key={i} variants={imageVariants}>
+            <img
+              src={src}
+              alt={`Portfolio image ${i + 1}`}
+              className="portfolio-image"
+            />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );
