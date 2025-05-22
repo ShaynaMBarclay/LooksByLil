@@ -5,7 +5,7 @@ import "./styles/Portfolio.css";
 
 const portfolioImages = [
   "https://res.cloudinary.com/dizfde4uy/image/upload/v1747941026/IMG_8403_sfp6wf.jpg",
- "https://res.cloudinary.com/dizfde4uy/image/upload/v1747932474/cards_l7omn7.jpg",
+ 
 
 "https://res.cloudinary.com/dizfde4uy/image/upload/v1747938366/_looksby_lil_9_y3vacg.png",
 "https://res.cloudinary.com/dizfde4uy/image/upload/v1747938367/_looksby_lil_7_ljhqzl.png",
@@ -37,7 +37,9 @@ const portfolioImages = [
 "https://res.cloudinary.com/dizfde4uy/image/upload/v1747938368/_looksby_lil_5_fjkah2.png",
 "https://res.cloudinary.com/dizfde4uy/image/upload/v1747938368/_looksby_lil_2_qycfgb.png",
 "https://res.cloudinary.com/dizfde4uy/image/upload/v1747938369/_looksby_lil_pb2q9h.png",
-  
+
+
+  "https://res.cloudinary.com/dizfde4uy/image/upload/v1747932474/cards_l7omn7.jpg",
 ];
 
 // Animation variants
