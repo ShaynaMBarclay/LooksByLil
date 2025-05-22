@@ -114,12 +114,12 @@
 /* Mobile devices (width <= 600px) */
 @media (max-width: 600px) {
   .sidebar {
-    width: 5.5rem; 
+    width: 5.9rem; 
     padding: 0.5rem 0;
   }
   
   .letter {
-    font-size: 4.5rem;
+    font-size: 4rem;
     letter-spacing: 2px;
     -webkit-text-stroke: 1px #29c229;
 
