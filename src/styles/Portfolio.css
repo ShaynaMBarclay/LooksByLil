@@ -70,14 +70,16 @@
 
     .portfolio-grid {
     grid-template-columns: 1fr; 
-    gap: 5rem;
+    gap: 2rem;
      justify-items: center;
+     margin-left: 2rem;
   }
 
    .portfolio-image {
-     width: 80%;
+     width: 70%;
     max-width: 320px;
     height: auto;
+    
     max-height: 350px;
     object-fit: contain; 
     border: 3px solid #39FF14;
@@ -85,12 +87,6 @@
     display: block;
   }
  
-  
-  .portfolio-grid {
-    
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
 
   .portfolio-image:hover {
     transform: scale(1.05); 
