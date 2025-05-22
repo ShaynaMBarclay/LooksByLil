@@ -36,15 +36,15 @@
 
 .portfolio-image {
   height: 350px;
-  width: 100%;
+   width: 100%;
+  max-width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.707);
   object-fit: cover;
   display: block;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
   cursor: pointer;
-   border: 3px solid #39FF14;
-  
+  border: 3px solid #39FF14;
 }
 
 .portfolio-image:hover {
@@ -55,19 +55,17 @@
 
 @media (max-width: 600px) {
   .portfolio {
-     padding: 0 1rem;
+    padding: 0 1rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center !important;
-    text-align: center !important;
+    align-items: center;
+    text-align: center;
+     width: 100vw;
+     box-sizing: border-box;
+    overflow-x: hidden; 
   }
 
-  .portfolio-title {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-align: center;
-  }
 
     .portfolio-grid {
     grid-template-columns: 1fr; 
@@ -76,11 +74,27 @@
   }
 
    .portfolio-image {
-    max-width: 320px; 
-    width: 100%; 
-    margin-left: auto;
-    margin-right: auto;
+     width: 80%;
+    max-width: 320px;
+    height: auto;
+    max-height: 350px;
+    object-fit: contain; 
+    border: 3px solid #39FF14;
+    margin-left: 3rem;
+    display: block;
   }
+ 
+  
+  .portfolio-grid {
+    
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio-image:hover {
+    transform: scale(1.05); 
+  }
+
 
 }
 
@@ -96,26 +110,7 @@
   }
 }
 
-/* Phones */
-@media (max-width: 600px) {
-  .portfolio {
-    padding: 0 1rem;
-  }
 
-  .portfolio-title {
-    font-size: 2.25rem;
-    letter-spacing: 2px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .portfolio-image:hover {
-    transform: scale(1.05); 
-  }
-}
 
 /* Very small phones */
 @media (max-width: 400px) {
@@ -153,7 +148,7 @@
 
   .portfolio-image {
     max-width: 340px;
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
   }
 

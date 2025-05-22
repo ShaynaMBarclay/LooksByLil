@@ -26,6 +26,35 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-y: auto;  /* 👈 allow scrolling */
-  margin-left: 10.5rem; /* to clear the fixed sidebar */
+  overflow-y: auto;  
+  margin-left: 10.5rem; 
+}
+
+/* Medium tablets and below */
+@media (max-width: 900px) {
+  .page-container {
+    margin-left: 7rem; 
+    margin-top: 5rem;
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 600px) {
+  .page-container {
+    margin-left: 5rem; 
+  }
+}
+
+/* Phones and very small devices */
+@media (max-width: 480px) {
+  .page-container {
+    margin-left: 0; 
+    padding: 0 1rem; 
+  }
+}
+
+@media (max-width: 400px) {
+  #root {
+    font-size: 14px; 
+  }
 }
