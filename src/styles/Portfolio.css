@@ -69,8 +69,8 @@
 
 @media (max-width: 600px) {
   .portfolio {
-    width: 85vw;
-    padding: 0 1rem;
+    width: 80vw;
+    padding: 1rem;
     margin-left: 2rem;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -92,7 +92,10 @@
     max-height: 350px;
     object-fit: cover;
     margin-left: 3rem;
-    border: 3px solid #39FF14;
+     background: linear-gradient(90deg, #39FF14, #39FF14); /* one color = no animation */
+    animation: none;
+    background-size: auto;
+    border: 2px solid #39FF14;
     display: block;
   }
  
