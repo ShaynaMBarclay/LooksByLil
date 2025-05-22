@@ -23,8 +23,10 @@
   padding: 1rem 0;
   box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
-  animation: slideInSidebar 0.6s ease-out forwards
+  animation: slideInSidebar 0.6s ease-out forwards;
 }
+
+
 
 .vertical-name {
   display: flex;
@@ -86,21 +88,4 @@
   object-fit: cover;
   margin-bottom: 2rem;
   border: 2px solid white;
-}
-
-.book-button {
-  background-color: white;
-  color: #ff69b4;
-  font-size: 0.7rem;
-  padding: 0.5rem 0.75rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-  margin-top: auto;
-  margin-bottom: 2rem;
-}
-
-.book-button:hover {
-  background-color: #ffe0f0;
 }

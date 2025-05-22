@@ -1,6 +1,4 @@
 .topbar {
-  display: flex;
-  align-items: center;
   position: fixed;
   top: 1rem;
   left: 0;
@@ -13,8 +11,7 @@
   z-index: 1000;
   font-family: "Lobster", sans-serif;
   background: transparent;
-  pointer-events: none;
-  
+  pointer-events: none; 
 }
 
 
@@ -36,7 +33,7 @@
   text-decoration: none;
    transition: all 0.3s ease;
   animation: wave 1.5s ease-in-out infinite;
-  pointer-events: auto; 
+  pointer-events: auto;
   
 }
 
