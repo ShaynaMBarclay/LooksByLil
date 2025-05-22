@@ -37,7 +37,10 @@
   height: auto;
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.707);
+  box-shadow:
+    0 0 10px #39FF14,
+    0 0 20px #39FF14,
+    0 0 40px #00ffcc;
   object-fit: contain; 
   object-fit: cover;
   display: block;
