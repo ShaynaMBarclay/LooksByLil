@@ -110,6 +110,14 @@
     font-size: 4rem; 
     letter-spacing: 3px;
      -webkit-text-stroke: 3px #ffa32a;
+      /* Reduced glow for better mobile readability */
+    text-shadow:
+      -1px -1px 0 #118c11,
+      1px -1px 0 #1f6f1f,
+      -1px 1px 0 #1f6f1f,
+      1px 1px 0 #1f6f1f,
+      0 0 3px #217b20,
+      0 0 6px #33cd18;
   }
   
   .profile-pic {
