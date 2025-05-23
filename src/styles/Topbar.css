@@ -156,3 +156,29 @@
     border-radius: 8px;
   }
 }
+/* iPhone 15 / modern phones in landscape mode */
+@media screen and (max-width: 930px) and (max-height: 500px) and (orientation: landscape) {
+  .topbar {
+    height: 40px;
+    padding: 0 0.6rem;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: auto;
+  }
+
+  .topbar-logo {
+    height: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.3rem;
+  }
+
+  .glow-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 2px solid #ff9100;
+    margin-left: 37rem;
+  }
+}
+
