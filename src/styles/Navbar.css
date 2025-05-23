@@ -107,7 +107,7 @@
   }
   
   .letter {
-    font-size: 4rem; 
+    font-size: 3.6rem; 
     letter-spacing: 3px;
      -webkit-text-stroke: 3px #ffa32a;
       /* Reduced glow for better mobile readability */
