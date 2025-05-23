@@ -21,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px #39FF14, 10px 0 10px rgba(0, 0, 0, 0.2);
   transform: translateX(-100%);
   animation: slideInSidebar 0.6s ease-out forwards;
   
