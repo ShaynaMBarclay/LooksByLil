@@ -167,3 +167,39 @@
     transform: scale(1.1); 
   }
 }
+
+@media screen and (max-width: 960px) and (orientation: landscape) {
+  .portfolio {
+    width: 84vw;
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin-top: 2.5rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  .portfolio-image {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    max-height: 240px;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 2px solid #39FF14;
+    background: linear-gradient(90deg, #39FF14, #39FF14); 
+    animation: none;
+  }
+
+  .portfolio-image:hover {
+    transform: scale(1.1) rotateY(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
